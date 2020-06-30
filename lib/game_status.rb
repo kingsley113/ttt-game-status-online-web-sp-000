@@ -39,12 +39,14 @@ def won?(array)
         return winning_positions
       else
         false
+      end
     end
     win_O = winning_positions.all? do |position|
       if position == "O"
         return winning_positions
       else
         false
+      end
     end
   end
 end
