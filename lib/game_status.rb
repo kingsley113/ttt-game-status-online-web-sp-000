@@ -22,7 +22,7 @@ def won?(array)
     win_index_2 = win_combination[1]
     win_index_3 = win_combination[2]
 
-    
+
     # load the values of the board at each winning position for this iteration
     position_1 = board[win_index_1]
     position_2 = board[win_index_2]
@@ -30,10 +30,10 @@ def won?(array)
 
     # assign array with the postitions to check
     win_positions[position_1, position_2, position_3]
-  
+
     win_positions.all? do |marker|
       marker == "X" || marker == "O"
-    end 
-    
+    end
+
   end
 end
