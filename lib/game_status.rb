@@ -35,13 +35,13 @@ def won?(array)
     #win_positions[position_1, position_2, position_3]
 
     win_X = winning_positions.all? do |position|
-      if position == "X" 
+      if position == "X"
         return winning_positions
       else
         false
     end
     win_O = winning_positions.all? do |position|
-      if position == "O" 
+      if position == "O"
         return winning_positions
       else
         false
