@@ -17,24 +17,34 @@ WIN_COMBINATIONS = [
 
 def won?(array)
   WIN_COMBINATIONS.each do |win_combination|
-    # grab the index combination of winnin positions, assign to 3 index variables
-    win_index_1 = win_combination[0]
-    win_index_2 = win_combination[1]
-    win_index_3 = win_combination[2]
+    # grab the index combination of winning positions, assign to 3 index variables
+    #win_index_1 = win_combination[0]
+    #win_index_2 = win_combination[1]
+    #win_index_3 = win_combination[2]
 
-
+    #win_index = [win_combination[0], win_combination[1], win_combination[2]]
     # load the values of the board at each winning position for this iteration
-    position_1 = array[win_index_1]
-    position_2 = array[win_index_2]
-    position_3 = array[win_index_3]
+    #position_1 = array[win_index[0]]
+    #position_2 = array[win_index[1]]
+    #position_3 = array[win_index[2]]
 
+    #winning_positions = [array[win_index[0]], array[win_index[1]], array[win_index[2]]
+
+    winning_positions = [array[win_combination[0]], array[win_combination[1]], array[win_combination[2]]]
     # assign array with the postitions to check
-    win_positions[position_1, position_2, position_3]
+    #win_positions[position_1, position_2, position_3]
 
-    win_positions.all? do |marker|
-      marker == "X" || marker == "O"
-      return win_combination
+    win_X = winning_positions.all? do |position|
+      if position == "X" 
+        return winning_positions
+      else
+        false
     end
-
+    win_O = winning_positions.all? do |position|
+      if position == "O" 
+        return winning_positions
+      else
+        false
+    end
   end
 end
