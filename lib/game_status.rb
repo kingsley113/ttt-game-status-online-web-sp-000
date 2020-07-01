@@ -39,5 +39,5 @@ def won?(array)
 end
 
 def full?(array)
-  !array.include(" ")
+  !array.include?(" ")
 end
