@@ -40,11 +40,12 @@ def won?(array)
     win_O = winning_positions.all? do |position|
       position == "O"
     end
+    # report the results of the tests
+    if win_X.true || win_O.true
+      return winning_positions
+    else
+      false
+    end
   end
-  # report the results of the tests
-  if win_X.true || win_O.true
-    return winning_positions
-  else
-    false
-  end
+
 end
