@@ -65,9 +65,11 @@ end
 
 def winner(array)
   if won?(array)
-    winning_combo = array[won?(array)]
+    winning_indexes = won?(array)
 
-    if winning_combo.detect{|i| i == "X"}
+    winning_markers = array(winning_indexes)
+
+    if winning_markers.any?{|i| i == "X"}
       "X"
     else
       "O"
