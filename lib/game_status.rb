@@ -61,6 +61,6 @@ def over?(array)
     false
 
 
-  
+
 
 end
