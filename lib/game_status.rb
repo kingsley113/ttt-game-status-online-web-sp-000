@@ -53,11 +53,11 @@ def draw?(array)
       true
     else
       #puts "& there was a winner"
-      false
+      true
     end
   else
     #puts "the board is not full"
-    true
+    false
   end
 
   # check if there is a current win
