@@ -51,7 +51,7 @@ def draw?(array)
     if won?(array) != false
       "false1"
     else
-      1
+      true
     end
   else
     false
