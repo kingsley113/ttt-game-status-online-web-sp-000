@@ -43,15 +43,17 @@ def full?(array)
 end
 
 def draw?(array)
+  draw = false
   # check if there is a current win
   if won?(array) == false
     # check if the board is full
     if full?(array) == true
-      return true
+      draw = true
     else
       false
     end
   else
     false
   end
+  draw
 end
