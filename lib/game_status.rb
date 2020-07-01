@@ -53,6 +53,7 @@ def draw?(array)
   else won?(array)
     return false
   end
+end
 
 def over?(array)
   if won?(array) || full?(array) || draw?(array)
@@ -60,8 +61,4 @@ def over?(array)
   else
     false
   end
-end
-
-
-
 end
