@@ -49,29 +49,12 @@ def draw?(array)
   if full?(array) == true
     #puts "board is full"
     if won?(array) != false
-      #puts "& there is no winner"
       false
-    else
-      #puts "& there was a winner"
-      true
+    elsif won?(array) == false
+      return true
     end
   else
-    #puts "the board is not full"
     false
   end
 
-  # check if there is a current win
-  #if won?(array) == false && full?(array) == true
-  #  true
-  #else
-  #  false
-
-    # check if the board is full
-  #  if full?(array) == true
-    #  true
-  #  else
-    #  false
-  #  end
-  #else
-    #false
 end
