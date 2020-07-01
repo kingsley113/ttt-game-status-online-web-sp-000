@@ -48,7 +48,7 @@ def draw?(array)
     true
   else
     false
-    
+
     # check if the board is full
   #  if full?(array) == true
     #  true
