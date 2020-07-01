@@ -65,15 +65,19 @@ end
 
 def winner(array)
   if won?(array)
-    winning_indexes = won?(array)
+    return array[won?(array)[0]]
 
-    winning_markers = array[winning_indexes]
+  #  winning_indexes = won?(array)
 
-    if winning_markers.any?{|x| x == "X"}
-      "X"
-    else
-      "O"
-    end
+  #  winning_markers = array[winning_indexes]
+
+  #  if winning_markers.any?{|x| x == "X"}
+  #    "X"
+  #  else
+  #    "O"
+  #  end
+
+    
   else
     nil
   end
