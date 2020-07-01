@@ -69,7 +69,7 @@ def winner(array)
 
     winning_markers = array[winning_indexes]
 
-    if winning_markers.any?{|i| i == "X"}
+    if winning_markers.any?{|x| x == "X"}
       "X"
     else
       "O"
