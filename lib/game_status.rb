@@ -16,25 +16,13 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(array)
+  # assign a variable to the constant WIN_COMBINATIONS to work with
   win_combination = WIN_COMBINATIONS
+  #iterate through untill we find a winning combo
   win_combination.find do |index|
-    # grab the index combination of winning positions, assign to 3 index variables
-    #win_index_1 = win_combination[0]
-    #win_index_2 = win_combination[1]
-    #win_index_3 = win_combination[2]
-
-    #win_index = [win_combination[0], win_combination[1], win_combination[2]]
-    # load the values of the board at each winning position for this iteration
-    #position_1 = array[win_index[0]]
-    #position_2 = array[win_index[1]]
-    #position_3 = array[win_index[2]]
-
-    #winning_positions = [array[win_index[0]], array[win_index[1]], array[win_index[2]]
-
+    #check on the winning positions of the board and assign the boards value for each space
     winning_positions = [array[index[0]], array[index[1]], array[index[2]]]
-    # assign array with the postitions to check
-    #win_positions[position_1, position_2, position_3]
-
+    # check if all spaces are either X or O
     win_X = winning_positions.all? do |position|
       position == "X"
     end
@@ -43,10 +31,9 @@ def won?(array)
     end
     # report the results of the tests
     if win_X == true || win_O == true
-      return win_positions = [index[0], index[1], index[2]]
+      return winning_index = [index[0], index[1], index[2]]
     else
       false
     end
   end
-
 end
