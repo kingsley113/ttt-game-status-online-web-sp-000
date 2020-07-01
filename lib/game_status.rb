@@ -49,7 +49,7 @@ def draw?(array)
   if full?(array) == true
     #puts "board is full"
     if won?(array) != false
-      "false1"
+      "false"
     else
       true
     end
