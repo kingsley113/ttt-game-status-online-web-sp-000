@@ -50,7 +50,7 @@ def draw?(array)
     return true
   elsif !full(array) && !won?(array)
     return false
-  else won?(board)
+  else won?(array)
     return false
   end
 
