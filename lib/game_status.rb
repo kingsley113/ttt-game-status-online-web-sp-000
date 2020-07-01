@@ -47,13 +47,13 @@ end
 
 def draw?(array)
   if !won?(array) && full?(array)
-    return true 
+    return true
   elsif !full(array) && !won?(array)
     return false
   else won?(board)
     return false
   end
-    
+
 
 
 
