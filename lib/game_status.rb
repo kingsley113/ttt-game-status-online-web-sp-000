@@ -41,3 +41,15 @@ end
 def full?(array)
   !array.include?(" ")
 end
+
+def draw?(array)
+  if full? == true
+    if won? == true
+      true
+    else
+      false
+    end
+  else
+    false
+  end
+end
