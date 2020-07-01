@@ -59,7 +59,8 @@ def over?(array)
     true
   else
     false
-
+  end
+end
 
 
 
