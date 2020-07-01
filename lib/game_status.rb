@@ -65,9 +65,9 @@ end
 
 def winner(array)
   if won?(array)
-    winning_indexes = won?(array)
+    winning_indexes.top_i = won?(array)
 
-    winning_markers = array[winning_indexes.to_i]
+    winning_markers = array[winning_indexes]
 
     if winning_markers.any?{|i| i == "X"}
       "X"
