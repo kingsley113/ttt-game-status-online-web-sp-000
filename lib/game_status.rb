@@ -1,3 +1,7 @@
+
+board = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
+puts "draw?(board)"
+
 # Helper Method
 def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
@@ -44,12 +48,16 @@ end
 
 def draw?(array)
   if full?(array) == true
+    puts "board is full"
     if won?(array) == false
-      return true
+      puts "& there is no winner"
+      true
     else
+      puts "& there was a winner"
       false
     end
   else
+    puts "the board is not full"
     false
   end
 
