@@ -46,15 +46,26 @@ def full?(array)
 end
 
 def draw?(array)
-  if full?(array) == true
-    #puts "board is full"
-    if won?(array) != false
-      false
-    else
-      true
-    end
-  else
-    false
+  if !won?(array) && full?(array)
+    return true 
+  elsif !full(array) && !won?(array)
+    return false
+  else won?(board)
+    return false
   end
+    
+
+
+
+  #if full?(array) == true
+    #puts "board is full"
+  #  if won?(array) != false
+  #    "false"
+  #  else
+  #    true
+  #  end
+  #else
+  #  false
+  #end
 
 end
