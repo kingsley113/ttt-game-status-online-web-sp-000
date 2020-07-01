@@ -47,11 +47,11 @@ def draw?(array)
   if win?(array) == false
     # check if the board is full
     if full?(array) == true
-      true
+      return true
     else
       false
     end
-  else
+  elsif win?(array) != true
     false
   end
 end
