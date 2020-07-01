@@ -64,7 +64,7 @@ def over?(array)
 end
 
 def winner(array)
-  if won?(array) 
+  if won?(array)
     if won?(array).all?{|"X"|}
       "X"
     elsif won?(array).all?{|"O"|}
