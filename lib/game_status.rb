@@ -77,7 +77,7 @@ def winner(array)
   #    "O"
   #  end
 
-    
+
   else
     nil
   end
