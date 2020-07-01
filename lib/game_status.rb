@@ -55,5 +55,5 @@ def draw?(array)
   else
     false
   end
-  draw
+  return draw
 end
