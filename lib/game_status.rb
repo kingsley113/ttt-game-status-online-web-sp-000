@@ -54,18 +54,13 @@ def draw?(array)
     return false
   end
 
+def over?(array)
+  if won?(array) || full?(array) || draw?(array)
+    true
+  else
+    false
 
 
-
-  #if full?(array) == true
-    #puts "board is full"
-  #  if won?(array) != false
-  #    "false"
-  #  else
-  #    true
-  #  end
-  #else
-  #  false
-  #end
+  
 
 end
