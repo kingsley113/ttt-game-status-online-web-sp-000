@@ -46,5 +46,5 @@ def won?(array)
     return winning_positions
   else
     false
-
+  end
 end
