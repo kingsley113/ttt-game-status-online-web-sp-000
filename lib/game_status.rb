@@ -43,7 +43,7 @@ def won?(array)
     end
     # report the results of the tests
     if win_X == true || win_O == true
-      return win_combination
+      return win_positions = [index[0], index[1], index[2]]
     else
       false
     end
