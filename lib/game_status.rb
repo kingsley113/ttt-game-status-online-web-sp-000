@@ -50,7 +50,7 @@ def draw?(array)
     #puts "board is full"
     if won?(array) == false
       #puts "& there is no winner"
-      true
+      false
     else
       #puts "& there was a winner"
       true
